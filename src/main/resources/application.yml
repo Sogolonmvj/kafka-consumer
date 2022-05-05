@@ -11,7 +11,7 @@ spring:
       authentication-database: admin
       username: root
       password: NkYVaAoS46Mm13sE
-      database: mongodb
+      database: store-data
       port: 27017
       host: localhost
 
@@ -19,4 +19,4 @@ topic:
   store: topic_store_kafka
 
 server:
-  port: 8081
+  port: 8083
