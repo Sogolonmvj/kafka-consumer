@@ -2,7 +2,9 @@
 
 # CQRS
 
-This project was created to practice CQRS implementation. It uses Kafka as a message broker. As it was created only as an exercise it is simple. It has a producer from where data is sent to a message broker (Kafka) and also has a consumer where data is modified and becomes read to be stored in a NoSQL database (MongoDB). After, the user can read data from the database using an API, queries can be done by using the student email or not, the later method will retrieve all data from the database.
+This project was created to practice CQRS implementation. It uses Kafka as message broker. As it was developed only to exercise it is simple. It has a producer from where data is sent to a message broker(Kafka) and a consumer where data is modified and becomes ready to be stored in a NoSQL database (MongoDB). After, user can retrieve data from the database using an API. Queries can be done by student email, as it could not repeat in database, or not, the later method will retrieve all data from the database. 
+
+Kafka has been used to handle messages asynchronously and a NoSQL database has been chosen due to its scalability and between the inumerous possibilities MongoDB has been chosen due to its capacity to store documents.
 
 ![structure](https://raw.githubusercontent.com/Sogolonmvj/kafka-producer/main/structure.drawio.png?token=GHSAT0AAAAAABUJUDCJMPELYBD7SGIN47DSYTVN45A)
 
