@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @RestController
@@ -19,12 +17,6 @@ public class StudentResource {
 
     @PostMapping
     public ResponseEntity<Student> saveMessage(@RequestBody Student student){
-
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-
-        student.setCreated(now);
-
         studentService.save(student);
         return ResponseEntity.ok(student);
     }
