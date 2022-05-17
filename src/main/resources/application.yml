@@ -1,19 +1,23 @@
 spring:
+
   kafka:
+
     consumer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: host.docker.internal:9092
       group-id: group_id
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
   data:
+
     mongodb:
       authentication-database: admin
       username: root
       password: NkYVaAoS46Mm13sE
       database: store-data
       port: 27017
-      host: localhost
+      host: host.docker.internal
 
 topic:
   store: topic_store_kafka
